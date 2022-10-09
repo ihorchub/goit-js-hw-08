@@ -20,7 +20,7 @@ function handleSubmit(evt) {
   evt.preventDefault();
   console.log(formData);
   evt.currentTarget.reset();
-  localStorage.clear();
+  localStorage.removeItem('feedback-form-state');
 }
 
 try {
