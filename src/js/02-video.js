@@ -10,7 +10,7 @@ function addToLocalStorage(data) {
 }
 
 player.getVideoTitle().then(function (title) {
-  console.log('title:', title);
+  console.log('Title:', title);
 });
 
 player.on('timeupdate', throttle(addToLocalStorage, 1000));
