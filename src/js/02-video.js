@@ -9,10 +9,6 @@ function addToLocalStorage(data) {
   localStorage.setItem('videoplayer-current-time', JSON.stringify(data));
 }
 
-player.getVideoTitle().then(function (title) {
-  console.log('Title:', title);
-});
-
 player.on('timeupdate', throttle(addToLocalStorage, 1000));
 
 try {
